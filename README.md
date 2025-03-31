@@ -1,66 +1,21 @@
-## Foundry
+# Raffle Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This is a Foundry-based decentralized lottery (raffle) project built as an Ethereum smart contract. The goal is to create a transparent, secure, and automated raffle system.
 
-Foundry consists of:
+## Description
+The Raffle smart contract allows users to purchase tickets with a small amount of ETH, with a randomly selected winner receiving the prize pool. Randomness can be ensured using Chainlink VRF (Verifiable Random Function).
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Key Features
+- **Ticket Purchase**: Anyone can participate by sending a minimum amount of ETH.
+- **Random Winner Selection**: Decentralized and tamper-proof winner determination.
+- **Automated Payout**: The prize is automatically transferred to the winner.
 
-## Documentation
+## Installation and Usage
+1. **Prerequisites**:
+   - Install [Foundry](https://github.com/foundry-rs/foundry): `curl -L https://foundry.paradigm.xyz | bash`
+   - Install dependencies: `forge install`
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+2. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/fadam04/Raffle.git
+   cd Raffle
